@@ -3,22 +3,24 @@ import numpy as np
 import pandas as pd
 import scipy.stats as stats
 import seaborn as sns
-import statsmodels.api as sm
-from sklearn import linear_model
-from sklearn import metrics
-from sklearn.dummy import DummyRegressor
-from sklearn.feature_selection import SelectKBest, f_regression, mutual_info_regression
-from sklearn.linear_model import LinearRegression
-from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler
-from sklearn.preprocessing import StandardScaler
-from statsmodels.formula.api import ols
-from statsmodels.stats.outliers_influence import variance_inflation_factor
+# import statsmodels.api as sm
+# from sklearn import linear_model
+# from sklearn import metrics
+# from sklearn.dummy import DummyRegressor
+# from sklearn.feature_selection import SelectKBest, f_regression, mutual_info_regression
+# from sklearn.linear_model import LinearRegression
+# from sklearn.model_selection import train_test_split
+# from sklearn.preprocessing import MinMaxScaler
+# from sklearn.preprocessing import StandardScaler
+# from statsmodels.formula.api import ols
+# from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 # https://www.kaggle.com/austinreese/craigslist-carstrucks-data
 data_frame = pd.read_csv("./vehicles.csv")
 
 # вывод столбцов и их типов
+column_types=data_frame.dtypes
+print(column_types)
 column_types=data_frame.dtypes
 print(column_types)
 
